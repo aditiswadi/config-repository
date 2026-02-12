@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: postgresql://order-service-db:5432/${POSTGRES_DB}
+    url: jdbc:postgresql://order-service-db:5432/${POSTGRES_DB}
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
   jpa:
