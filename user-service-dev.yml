@@ -5,6 +5,12 @@ spring:
   mongodb:
     uri: mongodb://root:root@localhost:27017/user_db?authSource=admin
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+
 eureka:
   client:
     service-url:
