@@ -3,15 +3,9 @@ server:
 
 spring:
   datasource:
-<<<<<<< HEAD
-    url: jdbc:postgresql://order-service-db:5432/${POSTGRES_DB}
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
-=======
     url: jdbc:postgresql://localhost:5432/order_db
     username: root
     password: root
->>>>>>> 21ec763 (refactor(config): update service configuration for local dev environment)
   jpa:
     hibernate.ddl-auto: update
   sql:
@@ -21,11 +15,7 @@ spring:
 eureka:
   client:
     service-url:
-<<<<<<< HEAD
-      defaultZone: http://discovery-server:8761/eureka
-=======
       defaultZone: http://localhost:8761/eureka
->>>>>>> 21ec763 (refactor(config): update service configuration for local dev environment)
     register-with-eureka: true
     fetch-registry: true
   instance:
