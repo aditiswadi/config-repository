@@ -2,8 +2,9 @@ server:
   port: 8001
 
 spring:
-  mongodb:
-    uri: mongodb://root:root@localhost:27017/user_db?authSource=admin
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/user_db?authSource=admin
 
   rabbitmq:
     host: localhost
